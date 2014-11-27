@@ -1,0 +1,38 @@
+<?php
+/**
+ * ZfHipsters Key Value Storage Adapter (https://github.com/zf-hipsters)
+ *
+ * @link      https://github.com/zf-hipsters/key-value-storage for the canonical source repository
+ * @copyright Copyright 2014 ZF-Hipsters
+ * @license   http://www.apache.org/licenses/LICENSE-2.0 Apache Licence, Version 2.0
+ */
+return array(
+    'zf-hipsters' => array(
+        'keyvalue' => array(
+            'adapter' => array(
+                'name'     =>'',                            // Default: keyvalue
+                'options'  => array(
+                    'namespace'  => '',
+                    'connection' => array(
+                        'driver' => 'Pdo',
+                        'dsn' => 'mysql:dbname=;host=',     // Add DSN string here
+                        'username' => '',                   // Default: root
+                        'password' => '',                   // Default: null
+                    ),
+                    'table' => array(
+                        'name' => '__TABLE_NAME__',
+                        'mapping' => array(
+                            'key' => '__KEY_COL__',         // Default: key
+                            'value' => '__VALUE_COL__'      // Default: value
+                        ),
+                    ),
+                ),
+            ),
+            'plugins' => array(
+                'exception_handler' => array(
+                    'throw_exceptions' => false
+                ),
+            ),
+        ),
+    ),
+);

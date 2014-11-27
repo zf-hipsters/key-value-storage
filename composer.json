@@ -1,0 +1,21 @@
+{
+    "name": "zf-hipsters/key-value-storage",
+    "description":"KeyValue Storage Adapter for Zend Cache",
+    "keywords":["keyvalye","ZF2","cache", "storage", "adapter"],
+    "type":"library",
+    "license":"APACHE",
+    "authors":[
+        {
+            "name":"Aaron Weatherall",
+            "email": "aaron@weatherall.net.au"
+        }
+    ],
+    "homepage": "http://github.com/zf-hipsters/key-value-storage",
+    "require":{
+        "php":">=5.3.9",
+        "zendframework/zendframework": "~2.2"
+    },
+    "autoload": {
+        "psr-0": { "ZfHipters\\KeyValueStorage\\": "src/" }
+    }
+}
