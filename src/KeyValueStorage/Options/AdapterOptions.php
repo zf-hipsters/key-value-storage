@@ -6,13 +6,13 @@
  * @copyright Copyright 2014 ZF-Hipsters
  * @license   http://www.apache.org/licenses/LICENSE-2.0 Apache Licence, Version 2.0
  */
-namespace KeyValueStorage\Options;
+namespace ZfHipsters\KeyValueStorage\Options;
 use Zend\Cache\Storage\Adapter\AdapterOptions as ZendAdapterOptions;
 use Zend\Db\Adapter\Adapter;
 
 /**
  * Class AdapterOptions
- * @package KeyValueStorage\Options
+ * @package ZfHipsters\KeyValueStorage\Options
  */
 class AdapterOptions extends ZendAdapterOptions
 {

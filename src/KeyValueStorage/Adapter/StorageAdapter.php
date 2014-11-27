@@ -6,17 +6,17 @@
  * @copyright Copyright 2014 ZF-Hipsters
  * @license   http://www.apache.org/licenses/LICENSE-2.0 Apache Licence, Version 2.0
  */
-namespace KeyValueStorage\Adapter;
+namespace ZfHipsters\KeyValueStorage\Adapter;
 
 use Zend\Cache\Exception;
 use Zend\Cache\Storage\Adapter\AbstractAdapter;
-use KeyValueStorage\Options\AdapterOptions;
+use ZfHipsters\KeyValueStorage\Options\AdapterOptions;
 use Zend\Db\Adapter\Adapter;
 use Zend\Db\Sql\Sql;
 
 /**
  * Class StorageAdapter
- * @package KeyValueStorage\Adapter
+ * @package ZfHipsters\KeyValueStorage\Adapter
  */
 class StorageAdapter extends AbstractAdapter
 {

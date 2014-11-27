@@ -10,7 +10,7 @@ return array(
     'zf-hipsters' => array(
         'keyvalue' => array(
             'adapter' => array(
-                'name'     =>'',                            // Default: keyvalue
+                'name'     =>'keyvalue',                    // Default: keyvalue
                 'options'  => array(
                     'namespace'  => '',
                     'connection' => array(
@@ -22,8 +22,8 @@ return array(
                     'table' => array(
                         'name' => '__TABLE_NAME__',
                         'mapping' => array(
-                            'key' => '__KEY_COL__',         // Default: key
-                            'value' => '__VALUE_COL__'      // Default: value
+                            'key' => 'key',                 // Default: key
+                            'value' => 'value'              // Default: value
                         ),
                     ),
                 ),

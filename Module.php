@@ -6,7 +6,7 @@
  * @copyright Copyright 2014 ZF-Hipsters
  * @license   http://www.apache.org/licenses/LICENSE-2.0 Apache Licence, Version 2.0
  */
-namespace KeyValueStorage;
+namespace ZfHipsters\KeyValueStorage;
 
 /**
  * Class Module
@@ -26,7 +26,7 @@ class Module
         return array_merge($config, array(
             'service_manager' => array(
                 'factories' => array(
-                    $adapterName => 'KeyValueStorage\Factory\AdapterFactory',
+                    $adapterName => 'ZfHipsters\KeyValueStorage\Factory\AdapterFactory',
                 )
             )
         ));
@@ -39,9 +39,6 @@ class Module
     public function getAutoloaderConfig()
     {
         return array(
-            'Zend\Loader\ClassMapAutoloader' => array(
-                APPLICATION_PATH . '/module/autoload_classmap.php',
-            ),
             'Zend\Loader\StandardAutoloader' => array(
                 'namespaces' => array(
                     __NAMESPACE__ => __DIR__ . '/src/' . __NAMESPACE__,

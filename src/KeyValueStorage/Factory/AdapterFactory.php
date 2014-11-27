@@ -6,12 +6,16 @@
  * @copyright Copyright 2014 ZF-Hipsters
  * @license   http://www.apache.org/licenses/LICENSE-2.0 Apache Licence, Version 2.0
  */
-namespace KeyValueStorage\Factory;
+namespace ZfHipsters\KeyValueStorage\Factory;
 
 use Zend\ServiceManager\FactoryInterface;
 use Zend\ServiceManager\ServiceLocatorInterface;
 use Zend\Cache\StorageFactory;
 
+/**
+ * Class AdapterFactory
+ * @package ZfHipsters\KeyValueStorage\Factory
+ */
 class AdapterFactory implements FactoryInterface
 {
     /**
@@ -28,7 +32,7 @@ class AdapterFactory implements FactoryInterface
 
         StorageFactory::getAdapterPluginManager()->setInvokableClass(
             $storageName,
-            'KeyValueStorage\Adapter\StorageAdapter'
+            'ZfHipsters\KeyValueStorage\Adapter\StorageAdapter'
         );
 
         $cache  = StorageFactory::factory($storageOptions);
